@@ -1,0 +1,25 @@
+bitstring==3.1.9
+cycler==0.11.0
+Cython==0.29.26
+docopt==0.6.2
+et-xmlfile==1.1.0
+fonttools==4.28.5
+illuminate==0.6.5
+kiwisolver==1.3.2
+matplotlib==3.5.1
+numpy==1.22.0
+openpyxl==3.0.9
+packaging==21.3
+pandas==1.3.5
+Pillow==9.0.0
+pybedtools==0.8.2
+pyparsing==3.0.6
+pysam==0.18.0
+python-dateutil==2.8.2
+pytz==2021.3
+PyVCF @ git+https://github.com/wmrgl/pyvcf.git@d22c69717354ad6779d96801e6f1c1201c37e9f3
+ruffus==2.8.4
+scipy==1.7.3
+six==1.16.0
+XlsxWriter==3.0.2
+xmltodict==0.12.0
