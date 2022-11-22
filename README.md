@@ -27,4 +27,24 @@ mv 180524_M04099_0184_000000000-BMPJT example_data
 cd example_data
 gunzip SampleSheet*.csv.gz 
 cd ..
+
+mkdir output 
+
+#need to do this as script checks for version info in path and this is easiest way to include it
+cp MiSeq-master-pipeline.py MiSeq-master-pipeline-v2.0.2.py 
+
+
+
+## Other
+#If need to build docker image from dockerfile
+cd docker
+docker build . -t wmglh/wmglh
+docker save wmglh/wmglh | gzip > wmglh.2.docker.tar.gz
+rm -f wmglh.docker.tar.gz
+mv wmglh.2.docker.tar.gz wmglh.docker.tar.gz
+dx cd Ruffus_pipeline/docker
+dx upload wmglh.docker.tar.gz
+dx cd ../..
+cd ..
+
 ```
