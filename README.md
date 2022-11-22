@@ -47,4 +47,11 @@ dx upload wmglh.docker.tar.gz
 dx cd ../..
 cd ..
 
+
+
+docker run --rm -v /home/dnanexus/MiSeq-Universal-Nextera-pipeline-2.0.2:/home/worker/MiSeq-Universal-Nextera-pipeline-2.0.2 wmglh/wmglh python3 /home/worker/MiSeq-Universal-Nextera-pipeline-2.0.2/MiSeq-master-pipeline-v2.0.2.py  -c /home/worker/MiSeq-Universal-Nextera-pipeline-2.0.2/CLL-config-sc.txt -s  /home/worker/MiSeq-Universal-Nextera-pipeline-2.0.2/example_data/SampleSheet.csv -fastq /home/worker/MiSeq-Universal-Nextera-pipeline-2.0.2/example_data/FASTQs/ -interop /home/worker/MiSeq-Universal-Nextera-pipeline-2.0.2/example_data/InterOp/ -n /home/worker/workdir -out /home/worker/output4/
+
+
+may need to add this line to script
+logfile = open("%s.commandline_usage_logfile" % (args.named_directory), "x")
 ```
