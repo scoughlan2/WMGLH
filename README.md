@@ -28,11 +28,9 @@ cd example_data
 gunzip SampleSheet*.csv.gz 
 cd ..
 
-mkdir output 
+mkdir OUT
 
-#need to do this as script checks for version info in path and this is easiest way to include it
-cp MiSeq-master-pipeline.py MiSeq-master-pipeline-v2.0.2.py 
-
+dx download MiSeq-master-pipeline-v2.0.2-sc.py
 
 
 ## Other
